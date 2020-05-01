@@ -1,0 +1,92 @@
+#!/bin/bash
+_lies=(
+'DevOps...DevOps never changes.'
+'Its... a thing. A science thing. It hurts robots. Dont worry about it.'
+'When in doubt, deploy a Mini-Nuke.'
+'They asked me if I had a degree in theoretical physics. I said I had a theoretical degree in physics. They said welcome aboard.'
+'Enjoy Vault Living! Reserve Your Spot Today!'
+'OBJECTIVE: Talk to the idiot wearing sunglasses.'
+'We just upload my memory into the mainframe and upgrade the defenses, and then we can take over Las Vegas. Easy peasy!'
+'This PR protected by the patented Vault-Tec Pull Request Security System'
+'WARNING: Your copy of Ansible Vault has not been registered with Vault-Tec. This has been automatically reported.'
+'Diamond City: Ghoul-free since 2282'
+'From where you’re kneeling it must seem like an 18-carat run of bad luck. Truth is ... the game was rigged from the start.'
+'Vault-Tec Vault Door Control Interface: 
+Vault Door Status: SEALED
+Vault 111 is currently operating within normal parameters.'
+)
+_pipboy=(
+'                                        ,.'                            
+'                                       D .W'                                
+'                                      E    #EE.'                            
+'                               j  ji Lt .    :#.'                           
+'                              #  ;             .'                          
+'                             # ##              E;'                          
+'                             ;    .#i ,W##      Lj'                         
+'                             ;    G  f.  tE   t  W'                         
+'                             #   #       .t#G ,#  #'                        
+'                              #KG              #  #'                        
+'                              K.        jD     #  KKW'                      
+'                          .KWLE               #   E,KKD'                    
+'                         jKE j  .              E. W:  WW:'                  
+'                      . #K   #  #   t   :     ; D #    :KW'                 
+'                       WW    t  #       G#    #L  W      ##'                
+'         .;           Wj           t.    :     #fLL       EK'               
+'        #  f        .Wi     j    .W             .K       ..DW'              
+'       ;   .        Wt      E     #.          W tW          EW'           
+'       K   K       WG       K     f;  .         LG           WW'            
+'       G   #     .EW        E  :       Et        K            Wj'           
+'       D   W      K         f L#;    GK,W        W             W'           
+'       t   #    .Wi          D,W  .  . #t       W:             G#'          
+'      i    .W   j#           #. .#f;j#:       #L                W'         
+'     ;DWWi   #  W            Gi              #;                 jK'         
+'    W     Wt  #;#             #   :i        WL                   K'         
+'   t       Gj :K:             :#           KG#L                  DW'        
+'    j       #  KW#Ki           DW        .#,   WW                 W'        
+'    #####E  E  #:  ,LK###WEj:   #Dt        E   t GW               #:'       
+'    j     .#  .#E               #  KKii   #   D  ..Wf             GE'       
+'    t       #  .W               #  ;KL;f#L    W     ,W             #'       
+'   .E  ::   K K D               K   .:j, .   #        #            W'      
+'     W,..f#D  ; K                #          #          #           W'       
+'     f     ,E # j                f        KG            #          W.'      
+'    .;     LW .,           #     #     #W,               W         W;'      
+'     tW###W; E.           LW     #     D                . #        Kj'      
+'       WWGE#f .       .K#  #     E     ,                   W       Ej'      
+'           .iKEDEKWEj.     #     i    i                     W.     Kt'      
+'             EG            #    :     G       t             ij     W;'      
+'             LK            #    j     W        ;f            W     #'      
+'             ,W            #    D     #          jD           #    K'       
+'              W            #    K     #           D.#W.       D    W'       
+'              W            #    #     #          ,   f       ,     #'       
+'              #;           #    #     #          E   t      .#    DD'       
+'              jW           D    #     #          #  #       .j    W '       
+'               W           t.   W     #          W  .       #     W'        
+'               #t          ..   K     #          L #        E    WE.'       
+'               :W           #,  K     #         .t         #     W'         
+'                #:          , # K     #         G;W        G    GW'         
+'                ,W          f .,D     #      j#D;,K       #     W'          
+'                 #G         K         G####D,    ,W.     :,    WE'          
+'                  K         #        .           K #f    #    ,W'           
+'                  fW        K                   .D  D##KK     W,'           
+'                   WW  .    f                   .t     KK    WG'            
+'                    WD      ;:#,               t#L    K #   WW'             
+'                     WD      .  :WD,      ,L##t  #      ff ##'              
+'                      #W.    j       .;i,.       ;    : W #W'               
+'                       ##    E                    K.    W#W'                
+'                        DK;  #                    Et   GKj'                 
+'                         .W# W                     W  #W.'                
+'                           GWK                     W#Kj'                    
+'                             D#:                   #j'                      
+'                               :WW,             .G#K'                         
+'                                   $##WWwwwWW##$'                                    
+)
+for _pip in "${_pipboy[@]}"; do
+        printf "%s\n" "${_pip}"
+        sleep 0.05
+done
+printf "\n\n%s\n\n" "${_lies[$(( $RANDOM % ${#_lies[@]} ))]}"
+
+printf "\n\n"
+sleep 2
+
+/bin/bash
